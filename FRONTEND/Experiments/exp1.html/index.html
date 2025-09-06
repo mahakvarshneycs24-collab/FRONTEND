@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>GLA University — Timetable (Odd Semester)</title>
+<style>
+  :root{
+    --accent:#222;
+    --muted:#666;
+    --table-bg:#fff;
+    --border: #d0d0d0;
+    --row-alt:#fafafa;
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  }
+
+  body{
+    margin: 24px;
+    background: #f6f7f8;
+    color: var(--accent);
+  }
+
+  .sheet {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: var(--table-bg);
+    padding: 18px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+    border-radius: 6px;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  header h1{
+    font-size: 18px;
+    margin: 0;
+    letter-spacing: 0.6px;
+  }
+  header .meta{
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 6px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 14px;
+    font-size: 12px;
+  }
+
+  caption {
+    caption-side: top;
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  thead th{
+    background: #ffffff;
+    border-bottom: 2px solid var(--border);
+    padding: 8px 6px;
+    font-weight: 700;
+    text-align: left;
+    font-size: 12px;
+  }
+
+  tbody td, thead th {
+    border: 1px solid var(--border);
+  }
+
+  tbody td{
+    padding: 6px 8px;
+    vertical-align: top;
+  }
+
+  tbody tr:nth-child(even){
+    background: var(--row-alt);
+  }
+
+  .time {
+    white-space:nowrap;
+    width: 140px;
+    font-weight:600;
+  }
+
+  .lunch {
+    text-align:center;
+    font-weight:700;
+    color:#333;
+    background: #fffbe6;
+  }
+
+  .small {
+    font-size: 11px;
+    color: var(--muted);
+  }
+
+  /* responsive: shrink table to scroll on small screens */
+  .table-wrap { overflow-x:auto; }
+
+  /* print-friendly */
+  @media print{
+    body { margin: 6mm; background: white; }
+    .sheet { box-shadow:none; }
+    thead th { background: #fff !important; -webkit-print-color-adjust: exact; }
+  }
+</style>
+</head>
+<body>
+  <div class="sheet">
+    <header>
+      <h1>GLA UNIVERSITY, MATHURA - Time Table (Odd Semester Programme)</h1>
+      <div class="meta">Institute of Engineering & Technology | Computer Engineering & Applications | B.Tech (CSE) | Section: 2FB | Semester: III | Class Advisor: Dr. Neetu Agrawal (EC) | Session: 2025-26 | w.e.f. 04/Aug/2025</div>
+    </header>
+
+    <div class="table-wrap">
+    <table>
+      <caption><strong>Day / Lecture #</strong> — 08:00-09:00 | 09:00-10:00 | 10:00-11:00 | 11:00-12:00 | 12:00-01:00 | LUNCH 01:00-02:00 | 02:00-03:00 | 03:00-04:00 | 04:00-05:00 | 05:00-06:00</caption>
+      <thead>
+        <tr>
+          <th class="time">Day / Lecture #</th>
+          <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th>
+          <th>Lunch</th>
+          <th>6</th><th>7</th><th>8</th><th>9</th><th>10</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="time"><strong>Monday</strong><div class="small">08:00-... </div></td>
+          <td>BCSC0801</td>
+          <td>BCSC0801</td>
+          <td>BCSE0813</td>
+          <td>BCSE0813</td>
+          <td>—</td>
+          <td class="lunch" colspan="1">LUNCHTIME</td>
+          <td>BELH0020</td>
+          <td>BCSC1003</td>
+          <td>BCSC1003</td>
+          <td>ABVIII-405</td>
+          <td>ABVIII-405</td>
+        </tr>
+
+        <tr>
+          <td class="time"><strong>Tuesday</strong></td>
+          <td>BCSC0802</td>
+          <td>BCSC0802</td>
+          <td>BELH0020</td>
+          <td>BCSE0031</td>
+          <td>—</td>
+          <td class="lunch">LUNCHTIME</td>
+          <td>BCSE1010</td>
+          <td>BCSC1003</td>
+          <td>BCSC1003</td>
+          <td>AB1-204</td>
+          <td>ABVIII-405</td>
+        </tr>
+
+        <tr>
+          <td class="time"><strong>Wednesday</strong></td>
+          <td>BCSC1002</td>
+          <td>BCSC1002</td>
+          <td>BCSC1005</td>
+          <td>BCSE0031</td>
+          <td>—</td>
+          <td class="lunch">LUNCHTIME</td>
+          <td>PCPH 0001</td>
+          <td>BELH 0020</td>
+          <td>—</td>
+          <td>ABVIII-405</td>
+          <td>ABVIII-405</td>
+        </tr>
+
+        <tr>
+          <td class="time"><strong>Thursday</strong></td>
+          <td>BCSC1002</td>
+          <td>BCSC1002</td>
+          <td>PCPH 0001</td>
+          <td>BCSC1005</td>
+          <td>—</td>
+          <td class="lunch">LUNCHTIME</td>
+          <td>BCSC1010</td>
+          <td>BCSC1003</td>
+          <td>BELH</td>
+          <td>ABI-423</td>
+          <td>ABVIII-404</td>
+        </tr>
+
+        <tr>
+          <td class="time"><strong>Friday</strong></td>
+          <td>BCSE0031</td>
+          <td>—</td>
+          <td>BCSC0804</td>
+          <td>BCSE0804</td>
+          <td>—</td>
+          <td class="lunch">LUNCHTIME</td>
+          <td>BSCS1005</td>
+          <td>BSCS1010</td>
+          <td>FB3 BSCS1010</td>
+          <td>ABI-5005</td>
+          <td>ABI-423</td>
+        </tr>
+
+        <tr>
+          <td class="time"><strong>Saturday</strong></td>
+          <td colspan="11" class="small">No scheduled classes / End of Timetable | Total Subjects: 7 | Total Working Hours: 34</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+
+  <!-- Notes:
+       - Edit any cell content above (text between <td>...</td>) to match your exact codes/rooms.
+       - To remove lunch as a separate column, merge cells with colspan in rows where appropriate.
+  -->
+</body>
+</html>
